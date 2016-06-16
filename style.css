@@ -35,6 +35,13 @@ body {
    color: white;
  }
 
+.health {
+  border-bottom: white 2px solid;
+  border-right: blue 3px solid;
+  overflow: auto;
+  width: 9rem;
+  float: left;
+}
  .bars {
   display: inline-block;
   background-color: white;
@@ -42,6 +49,10 @@ body {
   margin: 0rem;
   border: .01rem solid black;
   transform: skewY(-3deg);
+  width: .35rem;
+  height: 1rem;
+  border: 1 px solid #000;
+
 }
 
 .bars--max {
@@ -51,11 +62,15 @@ body {
   margin: 0rem;
   border: .01rem solid black;
   transform: skewY(-3deg);
+  width: .35rem;
+  height: 1rem;
+  border: 1 px solid #000;
 }
 
  hr {
    max-width: 9.5rem;
    margin: 1.5rem 0rem 0rem 1rem;
+   color: blue;
  }
 
  .vert {
@@ -63,14 +78,27 @@ body {
    max-width:  2rem;
    transform: rotate(100deg);
 
+
  }
 
 .right {
   transform: skewY(3deg);
   position: fixed; top: 66%; right: 5%;
+  overflow: auto;
 }
 
+.weapon {
+  float: right;
+  position: relative;
+
+}
 .ammo {
   color: white;
   float: right;
+  position: absolute;
+  top: 1rem;
+  right: .5rem;
+}
+.ammo--41 {
+  font-size: 1rem;
 }
