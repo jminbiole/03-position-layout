@@ -18,8 +18,11 @@ body {
 }
 .left{
   text-align: left;
-  position: fixed; top: 70%; right: 70%;
-  width: 19rem; height: 5rem;
+  position: fixed;
+  top: 75%;
+  right: 70%;
+  width: 19rem;
+  height: 5rem;
   transform: translate(-8rem, 0rem);
   transform: skewY(-3deg);
 }
@@ -33,6 +36,11 @@ body {
    margin-top: 1.5rem;
    font-family: Futura;
    color: white;
+   font-size: .7rem;
+ }
+
+ .hp--500 {
+   font-size: 1.2rem;
  }
 
 .health {
@@ -83,14 +91,16 @@ body {
 
 .right {
   transform: skewY(3deg);
-  position: fixed; top: 66%; right: 5%;
+  position: fixed;
+  top: 74%;
+  right: 5%;
   overflow: auto;
 }
 
 .weapon {
   float: right;
   position: relative;
-
+  border-right: blue 2px solid;
 }
 .ammo {
   color: white;
@@ -98,7 +108,34 @@ body {
   position: absolute;
   top: 1rem;
   right: .5rem;
+  font-size: .7rem;
+
 }
 .ammo--41 {
-  font-size: 1rem;
+  font-size: 1.3rem;
+  font-family: Rockwell;
+}
+
+.middle {
+  position: fixed;
+  top: 62%;
+  right: 36%;
+  width: 19rem;
+  height: 5rem;
+  text-align: center;
+}
+.kills {
+  font-family: Impact;
+}
+
+h2 {
+  color: white;
+  text-shadow: 1px 1px black;
+  opacity: .73;
+  font-family: Impact;
+}
+
+.w2 {
+  color: red;
+
 }
