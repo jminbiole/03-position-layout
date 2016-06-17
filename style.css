@@ -1,7 +1,7 @@
 * {
   /*box-sizing: border-box;*/
   margin: 0 auto;
-
+  position: relative;
 }
 
 html {
@@ -10,6 +10,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  position: relative;
 }
 
 body {
@@ -19,12 +20,13 @@ body {
 .left{
   text-align: left;
   position: fixed;
-  top: 75%;
-  right: 70%;
+  bottom: 10%;
+  left: 5%;
   width: 19rem;
   height: 5rem;
   transform: translate(-8rem, 0rem);
   transform: skewY(-3deg);
+  overflow: auto;
 }
 
  .avatar{
@@ -53,7 +55,6 @@ body {
   float: left;
 }
  .bars {
-  display: inline-block;
   background-color: white;
   float: left;
   margin-bottom: .5rem;
@@ -66,7 +67,6 @@ body {
 
 .bars--max {
   background-color:yellow;
-  display: inline-block;
   float: left;
   margin: 0rem;
   border: .01rem solid #9c9b7e;
@@ -78,7 +78,7 @@ body {
 .right {
   transform: skewY(3deg);
   position: fixed;
-  top: 74%;
+  bottom: 2%;
   right: 5%;
   overflow: auto;
   width: 20rem;
@@ -175,10 +175,14 @@ body {
 .skull {
   position: fixed;
   top: 40%;
-  right: 46%;
+  left: 53%;
+  transform: translate(-65%, -250%);
 }
 .kills {
   font-family: Impact;
+  top: 50%;
+  left: 50%;
+  transform: translate(-150px, -50px);
 }
 
 h2 {
