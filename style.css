@@ -34,18 +34,19 @@ body {
 
  .hp {
    margin-top: 1.5rem;
-   font-family: Futura;
+   font-family: Garamond;
    color: white;
    font-size: .7rem;
  }
 
  .hp--500 {
-   font-size: 1.2rem;
+   font-size: 1.5rem;
  }
 
 .health {
   border-bottom: white 2px solid;
   border-right: blue 3px solid;
+  transform: skewX(-15deg);
   overflow: auto;
   width: 9rem;
   float: left;
@@ -54,12 +55,12 @@ body {
   display: inline-block;
   background-color: white;
   float: left;
-  margin: 0rem;
+  margin-bottom: .5rem;
   border: .01rem solid black;
-  transform: skewY(-3deg);
   width: .35rem;
   height: 1rem;
-  border: 1 px solid #000;
+  border: .01rem solid #000;
+  transform: skewX(-15deg);
 
 }
 
@@ -69,25 +70,11 @@ body {
   float: left;
   margin: 0rem;
   border: .01rem solid black;
-  transform: skewY(-3deg);
+  transform: skewX(-15deg);
   width: .35rem;
   height: 1rem;
   border: 1 px solid #000;
 }
-
- hr {
-   max-width: 9.5rem;
-   margin: 1.5rem 0rem 0rem 1rem;
-   color: blue;
- }
-
- .vert {
-   margin: -1rem 1rem 0rem 3rem;
-   max-width:  2rem;
-   transform: rotate(100deg);
-
-
- }
 
 .right {
   transform: skewY(3deg);
@@ -100,8 +87,26 @@ body {
 .weapon {
   float: right;
   position: relative;
-  border-right: blue 2px solid;
+  margin-right: .5rem;
+
+
 }
+.weapon-border {
+  border-right: blue 4px solid;
+  height: 2rem;
+  position: absolute;
+  left: 98%;
+  top: 36%;
+  transform: skewX(-14deg);
+  margin-left: .3rem;
+}
+
+.abilities {
+  float: right;
+  top: 20%;
+
+}
+
 .ammo {
   color: white;
   float: right;
@@ -123,6 +128,12 @@ body {
   width: 19rem;
   height: 5rem;
   text-align: center;
+}
+
+.skull {
+  position: fixed;
+  top: 40%;
+  right: 46%;
 }
 .kills {
   font-family: Impact;
