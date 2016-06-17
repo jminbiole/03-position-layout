@@ -34,18 +34,19 @@ body {
 
  .hp {
    margin-top: 1.5rem;
-   font-family: Garamond;
+   font-family: Rockwell;
    color: white;
    font-size: .7rem;
  }
 
  .hp--500 {
    font-size: 1.5rem;
+   font-family: Rockwell;
  }
 
 .health {
   border-bottom: white 2px solid;
-  border-right: blue 3px solid;
+  border-right: #209fd5 3px solid;
   transform: skewX(-15deg);
   overflow: auto;
   width: 9rem;
@@ -56,12 +57,11 @@ body {
   background-color: white;
   float: left;
   margin-bottom: .5rem;
-  border: .01rem solid black;
+  border: .01rem solid gray;
   width: .35rem;
   height: 1rem;
-  border: .01rem solid #000;
-  transform: skewX(-15deg);
-
+  transform: skewX(-5deg);
+  opacity: .65;
 }
 
 .bars--max {
@@ -69,11 +69,10 @@ body {
   display: inline-block;
   float: left;
   margin: 0rem;
-  border: .01rem solid black;
-  transform: skewX(-15deg);
+  border: .01rem solid #9c9b7e;
+  transform: skewX(-5deg);
   width: .35rem;
   height: 1rem;
-  border: 1 px solid #000;
 }
 
 .right {
@@ -82,6 +81,8 @@ body {
   top: 74%;
   right: 5%;
   overflow: auto;
+  width: 20rem;
+
 }
 
 .weapon {
@@ -92,21 +93,60 @@ body {
 
 }
 .weapon-border {
-  border-right: blue 4px solid;
+  border-right: #209fd5 4px solid;
   height: 2rem;
   position: absolute;
   left: 98%;
   top: 36%;
   transform: skewX(-14deg);
   margin-left: .3rem;
+  opacity: .45;
 }
 
 .abilities {
-  float: right;
-  top: 20%;
+  top: 30%;
+  right: 50%;
+  position: fixed;
+  transform: skewX(-15deg);
+}
+
+.abilities--1 {
+  border: white 1px solid;
+  border-radius: 20%;
+  background-color: #c6c6c6;
+  opacity: .65;
 
 }
 
+.abilities--2 {
+  border: white 1px solid;
+  border-radius: 20%;
+  background-color: #c6c6c6;
+  opacity: .65;
+
+}
+
+.key1 {
+  position: absolute;
+  left: 10%;
+  opacity: .85;
+  border: #c6c6c6 1px solid;
+  padding: 0 2px;
+  color: white;
+  transform: skewX(-10deg);
+  border-radius: 20%;
+}
+
+.key2 {
+  position: absolute;
+  left: 67%;
+  opacity: .85;
+  border: #c6c6c6 1px solid;
+  padding: 0 3px;
+  color: white;
+  transform: skewX(-10deg);
+  border-radius: 20%;
+}
 .ammo {
   color: white;
   float: right;
@@ -114,6 +154,8 @@ body {
   top: 1rem;
   right: .5rem;
   font-size: .7rem;
+  transform: skewX(-10deg);
+  font-family: Rockwell;
 
 }
 .ammo--41 {
@@ -149,4 +191,39 @@ h2 {
 .w2 {
   color: red;
 
+}
+
+.circle {
+  border: yellow 3px;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  padding: .1rem;
+  top: 80%;
+  position: fixed;
+  right: 47%;
+  border-style: dotted;
+  opacity: .6;
+}
+.cir--text {
+  position: relative;
+  transform: skewX(-10deg);
+}
+.inner--cir1 {
+  color: white;
+  position: absolute;
+  margin-top: .6rem;
+  left: 28%;
+  font-size: 1.4rem;
+  font-family: Impact;
+}
+
+.inner--cir2 {
+  color: yellow;
+  font-size: .7rem;
+  font-family: Impact;
+  position: absolute;
+  margin-top: 1.3rem;
+  left: 75%;
 }
