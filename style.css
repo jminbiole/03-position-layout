@@ -26,7 +26,8 @@ body {
   height: 5rem;
   transform: translate(-8rem, 0rem);
   transform: skewY(-3deg);
-  overflow: auto;
+  overflow: hidden;
+  min-width: 15rem;
 }
 
  .avatar{
@@ -50,14 +51,14 @@ body {
   border-bottom: white 2px solid;
   border-right: #209fd5 3px solid;
   transform: skewX(-15deg);
-  overflow: auto;
+  overflow: hidden;
   width: 9rem;
   float: left;
 }
  .bars {
   background-color: white;
   float: left;
-  margin-bottom: .5rem;
+    margin-bottom: .5rem;
   border: .01rem solid gray;
   width: .35rem;
   height: 1rem;
@@ -82,7 +83,7 @@ body {
   right: 5%;
   overflow: auto;
   width: 20rem;
-
+  min-width: 15rem;
 }
 
 .weapon {
@@ -147,6 +148,7 @@ body {
   transform: skewX(-10deg);
   border-radius: 20%;
 }
+
 .ammo {
   color: white;
   float: right;
@@ -163,26 +165,24 @@ body {
   font-family: Rockwell;
 }
 
-.middle {
-  position: fixed;
-  top: 62%;
-  right: 36%;
-  width: 19rem;
-  height: 5rem;
-  text-align: center;
-}
-
 .skull {
+  /*position: absolute;
+  /*top: 40%;
+  left: 53%;*/
+  /*transform: translate(-50%, -50%);*/
   position: fixed;
-  top: 40%;
-  left: 53%;
-  transform: translate(-65%, -250%);
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -180%)
+
 }
 .kills {
   font-family: Impact;
   top: 50%;
   left: 50%;
-  transform: translate(-150px, -50px);
+  transform: translate(-50%, 10%);
+  position: fixed;
+  text-align: center;
 }
 
 h2 {
@@ -206,7 +206,7 @@ h2 {
   padding: .1rem;
   top: 80%;
   position: fixed;
-  right: 47%;
+  right: 48%;
   border-style: dotted;
   opacity: .6;
 }
